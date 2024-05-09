@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Virtual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css..." />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="./scripts/layout.js" sync defer></script>
+  <script src="./scripts/products.js" sync defer></script>
+  <script src="./scripts/productCards.js" sync defer></script>
+  <script src="https://kit.fontawesome.com/1d65fbfa5e.js" crossorigin="anonymous"></script>
+  <script src="./scripts/filterProducts.js" sync defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="search">
+      <div class="logo">
+        <a class="logo" href="./index.html">
+          <img src="assets/tiendamia-logo.svg" alt="Logo store">
+        </a>
+      </div>
+      <div class="form">
+        <form>
+          <input id="Search" type="text" placeholder="Search" />
+        </form>
+      </div>
+      <div class="social">
+        
+      </div>
+    </div>
+    <div class="nav" id="nav">
+      <!-- <ul>
+        <li class = "nav-button" ><a href="#">Ofertas de la semana</a></li>
+        <li><a href="#">Celulares</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul> -->
+    </div>
+  </header>
+  <section id="hero">
+    <div class="container">
+      <div class="title-container">
+        <span>Tecnología</span>
+        <span>Renovada</span>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="container">
+      <div id="products" class="product-container">
+        <!--  <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock1.jpg" alt="Macbook Pro" />
+            <div class="product-info">
+              <span class="product-title">Macbook Pro 15'4</span>
+              <span class="product-description">Space Gray</span>
+              <div class="product-price-block">
+                <span class="price">$750.000</span>
+                <span class="discount">50% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>
+        <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock2.jpg" alt="Laptop Asus" />
+            <div class="product-info">
+              <span class="product-title">Laptop Asus 32'</span>
+              <span class="product-description">Black</span>
+              <div class="product-price-block">
+                <span class="price">$1000.000</span>
+                <span class="discount">20% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>
+        <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock3.jpg" alt="Samsumg S23 Ultra" />
+            <div class="product-info">
+              <span class="product-title">Samsumg S23 Ultra</span>
+              <span class="product-description">Green</span>
+              <div class="product-price-block">
+                <span class="price">$2000.000</span>
+                <span class="discount">10% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>
+        <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock4.jpg" alt="Motorola" />
+            <div class="product-info">
+              <span class="product-title">Motorola</span>
+              <span class="product-description">Purple</span>
+              <div class="product-price-block">
+                <span class="price">$400.000</span>
+                <span class="discount">5% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>
+        <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock5.jpg" alt="Samsumg S23+" />
+            <div class="product-info">
+              <span class="product-title">Samsumg S23+</span>
+              <span class="product-description">Gray</span>
+              <div class="product-price-block">
+                <span class="price">$1500.000</span>
+                <span class="discount">10% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>
+        <article class="product-card">
+          <a class="product-card" href="./details.html">
+            <img class="product-img" src="assets\mock6.jpg" alt="Lenovo" />
+            <div class="product-info">
+              <span class="product-title">Lenovo</span>
+              <span class="product-description">Space black</span>
+              <div class="product-price-block">
+                <span class="price">$1300.000</span>
+                <span class="discount">5% Off</span>
+              </div>
+              <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+            </div>
+          </a>
+        </article>-->
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="columns-container" id="footer">
+        <!-- <div class="col">
+          <ul>
+            <li class="col-main-item"><a class="col-title" href="#">Ofertas de la semana</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Auticulares</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="col-main-item"><a class="col-title" href="#">Cómo comprar</a></li>
+            <li><a href="#">Formas de pago</a></li>
+            <li><a href="#">Envios</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="col-main-item"><a class="col-title" href="#">Costos y tarifas</a></li>
+            <li><a href="#">Impuestos</a></li>
+            <li><a href="#">Facturación</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="col-main-item"><a class="col-title" href="#">Mis pedidos</a></li>
+            <li><a href="#">Pedir nuevamente</a></li>
+            <li><a href="#">Lista de deseos</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="col-main-item"><a class="col-title" href="#">Garantía de Entrega</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="copyright">Curso de HTML + CSS 2024</div>
+    </div>
+  </footer>
+</body>
+
+</html>
