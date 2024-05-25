@@ -1,0 +1,23 @@
+{
+  "navegacion": [
+    {
+      "titulo": "Ofertas de la semana",
+      "enlace": "/Ofertas"
+    },
+    {
+      "titulo": "Celulares",
+      "enlace": "/celulares"
+    },
+    {
+      "titulo": "Laptops",
+      "enlace": "/laptops"
+    },
+    {
+      "titulo": "Soporte",
+      "enlace": "/soporte"
+    }
+  ],
+  "footer": {
+    "texto": "(c) 2024 Store, Inc. Todos los derechos reservados."
+  }
+}

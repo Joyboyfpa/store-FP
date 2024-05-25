@@ -154,6 +154,3 @@ if ((favItems && favItems.length > 0) && favItems != null) {
   // Actualizar la impresión del cuadro de detalle del total (sumando cero)
   document.getElementById("total").textContent = "$0.00";
 }
-
-let estadoCorazon = localStorage.getItem("heartState");
-console.log(estadoCorazon);

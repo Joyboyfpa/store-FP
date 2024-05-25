@@ -1,0 +1,96 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "title": "Macbook Pro 15'4",
+      "price": "750",
+      "stock": 2,
+      "images": "assets/mock1.jpg",
+      "discount": "50% Off",
+      "supplier": "Proveedor1",
+      "colors": ["Space-Gray", "Space-Black"],
+      "descripton": "El MacBook Pro de 15,4 pulgadas tiene una pantalla Retina retroiluminada por LED con tecnología IPS y una resolución nativa de 2880 por 1800 a 220 píxeles por pulgada. El MacBook Pro de 15,4 pulgadas también puede tener una Touch Bar con sensor Touch ID integrado."
+    },
+    {
+      "id": 2,
+      "title": "Laptop Asus 32'",
+      "price": "1000",
+      "stock": 3,
+      "images": "assets/mock2.jpg",
+      "discount": "20% Off",
+      "supplier": "Proveedor2",
+      "colors": ["Black", "White"],
+      "descripton": "11 Pro para empresa: Procesador Intel® Core™ i9-13980HX, NVIDIA RTX™ GPU para portátiles de generación Ada 3000, pantalla OLED de 16' 16:10 de 3,2 K y 120 Hz, memoria de dos ranuras SODIMM de hasta 32 GB, hasta 1 TB, dos ranuras M.2 PCIe® SSD, ASUS Dial y Thunderbolt™ 4 USB-C®"
+    },
+    {
+      "id": 3,
+      "title": "Samsumg S23 Ultra",
+      "price": "2000",
+      "stock": 4,
+      "images": "assets/mock3.jpg",
+      "discount": "10% Off",
+      "supplier": "Proveedor3",
+      "colors": ["Green", "Yellow"],
+      "descripton": "El Samsung Galaxy S23 Ultra es un teléfono inteligente que salió a la venta el 17 de febrero de 2023. Tiene las mismas dimensiones que el Galaxy S22 Ultra, pero con mejoras en la cámara y la batería"
+    },
+    {
+      "id": 4,
+      "title": "Motorola",
+      "price": "400",
+      "stock": 5,
+      "images": "assets/mock4.jpg",
+      "discount": "5% Off",
+      "supplier": "Proveedor4",
+      "colors": ["Purple", "Yellow"],
+      "descripton": "El Moto G53 con capacidad 5G pertenece a la gama intermedia de celulares, por sus características como memoria RAM y capacidad de almacenamiento."
+    },
+    {
+      "id": 5,
+      "title": "Samsumg S23+",
+      "price": "1500",
+      "stock": 6,
+      "images": "assets/mock5.jpg",
+
+      "discount": "10% Off",
+      "supplier": "Proveedor5",
+      "colors": ["Gray", "Green"],
+      "descripton": "El Samsung Galaxy S23 Plus posee un procesador Qualcomm (SM8550) con una velocidad Octa Core 3.36GHz,2.8GHz,2GHz. ¿Cuántas cámaras tiene el Samsung Galaxy S23 Plus? El Samsung Galaxy S23 Plus cuenta con una cámara frontal de 12MP además de tres cámaras posteriores de 50MP, 10MP y 12MP."
+    },
+    {
+      "id": 6,
+      "title": "Lenovo",
+      "price": "1300",
+      "stock": 7,
+      "images": "assets/mock6.jpg",
+
+      "discount": "5% Off",
+      "supplier": "Proveedor6",
+      "colors": ["Space black", "Gray"],
+      "descripton": "Lenovo es una marca de computadoras portátiles que ofrece una amplia variedad de laptops adaptadas a todas las necesidades de los usuarios."
+    },
+    {
+      "id": 7,
+      "title": "LG K42",
+      "price": "1500",
+      "stock": 8,
+      "images": "assets/mock7.jpg",
+
+      "discount": "8% Off",
+      "supplier": "Proveedor7",
+      "colors": ["Space black", "Red"],
+      "descripton": "Procesador. Mediatek MT6762 Octa-Core 2.0GHz · Sistema operativo. Android 10 · Memoria interna (ROM). 64GB · Soporta Memoria Externa. Hasta 2TB · Memoria RAM. 3GB."
+    },
+    {
+      "id": 8,
+      "title": "Macbook Pro 15'4",
+      "price": "750",
+      "stock": 9,
+      "images": "assets/mock1.jpg",
+
+      "discount": "50% Off",
+      "supplier": "Proveedor8",
+      "colors": ["Space-Gray", "Space-Black"],
+      "descripton": "El MacBook Pro de 15,4 pulgadas tiene una pantalla Retina retroiluminada por LED con tecnología IPS y una resolución nativa de 2880 por 1800 a 220 píxeles por pulgada. El MacBook Pro de 15,4 pulgadas también puede tener una Touch Bar con sensor Touch ID integrado."
+    }
+  ]
+}

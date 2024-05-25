@@ -30,18 +30,28 @@ function saveProduct() {
   if (!cartItems) {
     // Crea un nuevo array con el producto y guárdalo en el almacenamiento local
     localStorage.setItem("cart", JSON.stringify([product]));
+    Swal.fire({
+      title: "Producto añadido al carrito",
+      icon: "success",
+      iconColor: "green",
+    });
   } else {
     // Si hay elementos en el carrito, convierte la cadena JSON a un array
     cartItems = JSON.parse(cartItems);
 
     // Agrega el nuevo producto al array existente
     if (!Array.isArray(cartItems)) {
-        // Si lo que recuperamos del almacenamiento no es un array, tratamos de arreglarlo
-        cartItems = [cartItems];
-      }
-  
-      // Agrega el nuevo producto al array existente
-      cartItems.push(product);
+      // Si lo que recuperamos del almacenamiento no es un array, tratamos de arreglarlo
+      cartItems = [cartItems];
+    }
+
+    // Agrega el nuevo producto al array existente
+    cartItems.push(product);
+    Swal.fire({
+      title: "Producto añadido al carrito",
+      icon: "success",
+      iconColor: "green",
+    });
 
     // Vuelve a guardar el array en el almacenamiento local
     localStorage.setItem("cart", JSON.stringify(cartItems));
@@ -51,7 +61,7 @@ function agruparProductosPorIdYColor(productos) {
   const productosAgrupados = {};
 
   productos.forEach((producto) => {
-    const clave = `${producto.id}-${producto.color}`;
+    const clave = `${producto.color}-${producto.id}`;
 
     if (productosAgrupados[clave]) {
       productosAgrupados[clave].quantity += parseInt(producto.quantity);
@@ -64,7 +74,7 @@ function agruparProductosPorIdYColor(productos) {
         description: producto.description,
         color: producto.color,
         quantity: parseInt(producto.quantity),
-        unique: clave
+        unique: clave,
       };
     }
   });
@@ -73,7 +83,7 @@ function agruparProductosPorIdYColor(productos) {
 }
 function saveProductAndAgrupar() {
   saveProduct();
-  const productos = JSON.parse(localStorage.getItem('cart')); // Obtener productos del carrito
+  const productos = JSON.parse(localStorage.getItem("cart")); // Obtener productos del carrito
   const productosAgrupados = agruparProductosPorIdYColor(productos);
   localStorage.setItem("cart", JSON.stringify(productosAgrupados)); // Guardar productos agrupados en el localStorage
 }

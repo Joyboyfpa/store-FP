@@ -24,7 +24,7 @@ function printCards(arrayOfProducts, idSelector) {
     productsSelector.innerHTML = productsTemplate;
   }
 }
-printCards(products, "products");
+printCards(products.sort(), "products");
 
 
 

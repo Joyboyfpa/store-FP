@@ -7,7 +7,6 @@ let c = 0;
 function favoritos(uniqueId) {
   // Obtener los elementos favoritos del localStorage
   let favItems = localStorage.getItem("fav");
-  let favoritosActual = localStorage.getItem("heartState");
   // Verificar si ya existen elementos favoritos
   if (favItems) {
     favItems = JSON.parse(favItems);
@@ -16,26 +15,20 @@ function favoritos(uniqueId) {
     const existingItemIndex = favItems.findIndex(
       (item) => item.unique === uniqueId
     );
+    console.log(existingItemIndex);
     if (existingItemIndex !== -1) {
-      console.log(
-        "El producto ya está en la lista de favoritos. Se procede a eliminarlo"
-      );
+      Swal.fire({
+        title: "Info",
+        text: "El producto ya está en la lista de favoritos. Se procede a eliminarlo de los favoritos",
+        icon: "warning",
+        iconColor: "red",
+      });
       favItems.splice(existingItemIndex, 1);
       localStorage.setItem("fav", JSON.stringify(favItems));
       return;
     }
   } else {
     favItems = [];
-    // favoritoArray = [];
-    // let corazon = document.querySelectorAll("#favorite-heart");
-    // corazon.forEach((corazones) => {
-    //   let padre = corazones.parentNode;
-    //   favoritoArray.push({ unique: padre.classList.value });
-    // });
-    // localStorage.setItem("heartState", JSON.stringify(favoritoArray));
-    // corazon.forEach((item) => {
-    //   item.classList.toggle("clicked");
-    // });
   }
 
   // Si el producto no está en la lista de favoritos, agregarlo
@@ -47,11 +40,16 @@ function favoritos(uniqueId) {
   if (newItem) {
     favItems.push(newItem);
     localStorage.setItem("fav", JSON.stringify(favItems));
-    console.log("Producto agregado a la lista de favoritos.");
+    console.log("");
+    Swal.fire({
+      title: "Info",
+      text: "Producto agregado a la lista de favoritos.",
+      icon: "success",
+      iconColor: "green",
+    });
   } else {
     console.log("El producto que intentas agregar no existe.");
   }
-
 }
 function saveProduct() {
   const found = products.find((each) => each.id == id);
@@ -80,6 +78,7 @@ function saveProduct() {
     }
 
     // Agrega el nuevo producto al array existente
+
     cartItems.push(product);
 
     // Vuelve a guardar el array en el almacenamiento local
@@ -90,7 +89,7 @@ function agruparProductosPorIdYColor(productos) {
   const productosAgrupados = {};
 
   productos.forEach((producto) => {
-    const clave = `${producto.id}-${producto.color}`;
+    const clave = `${producto.color}-${producto.id}`;
 
     if (productosAgrupados[clave]) {
       productosAgrupados[clave].quantity += parseInt(producto.quantity);
@@ -119,6 +118,7 @@ function saveProductAndAgrupar() {
 
 function limpiarCarrito() {
   // Limpiar el localStorage
+
   if (cartItems) {
     localStorage.removeItem("cart");
   }
@@ -145,6 +145,24 @@ function limpiarCarrito() {
 
   // Actualizar la impresión del cuadro de detalle del total (sumando cero)
   document.getElementById("total").textContent = "$0.00";
+}
+function validarCompra() {
+  Swal.fire({
+    title: "¿Confirmar compra?",
+    icon: "question",
+    iconColor: "green",
+    showConfirmButton: true,
+    showCancelButton: true,
+    confirmButtonText: "confirmar",
+    cancelButtonText: "cancelar",
+    confirmButtonColor: "blue",
+    cancelButtonColor: "red",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({ title: "Compra realizada!" });
+      limpiarCarrito();
+    }
+  });
 }
 function createCard(producto, c) {
   if (c == 0) {
@@ -176,7 +194,7 @@ function createCard(producto, c) {
                 <h2 id= "total"></h2>
             </div>
             <p>Incluye impuestos 😄</p>
-            <button id="resumen-bttn" onclick = "limpiarCarrito()">Finalizar Compra</button>
+            <button id="resumen-bttn" onclick = "validarCompra()">Finalizar Compra</button>
         </div>
     </div>`;
   } else {
@@ -276,29 +294,52 @@ if (cartItems) {
   // Actualizar la impresión del cuadro de detalle del total (sumando cero)
   document.getElementById("total").textContent = "$0.00";
 }
-// document.getElementById("favorite-heart").addEventListener("click", function() {
-//   this.classList.toggle("clicked");
 
-//   // Verificar si el corazón no tiene la clase "clicked"
-//   if (!this.classList.contains("clicked")) {
-//     // Obtener los elementos favoritos del localStorage
-//     let favItems = localStorage.getItem("fav");
+function heartState() {
+  let favItems = localStorage.getItem("fav");
+  // Verificar si hay elementos en favItems
+  if (favItems) {
+    favItems = JSON.parse(favItems);
+    // Iterar sobre cada elemento en favItems
+    favItems.forEach((item) => {
+      let unico = item.unique;
+      console.log(unico);
+      var selector = "." + unico;
+      console.log(selector);
+      // Buscar el div con la clase correspondiente a "unico"
+      var elemento = document.querySelector(selector);
+      console.log(elemento);
+      // Verificar si se encontró el div
+      if (elemento) {
+        // Buscar el elemento <i> dentro del div
+        var elementoI = elemento.querySelector("i");
+        // Verificar si se encontró el elemento <i>
+        if (elementoI) {
+          // Alternar la clase "clicked" en el elemento <i>
+          elementoI.classList.toggle("clicked");
+        } else {
+          console.error("No se encontró el elemento <i> dentro de:", elemento);
+        }
+      } else {
+        console.error("No se encontró el div con la clase:", unico);
+      }
+    });
+  } else {
+    console.log("No hay elementos guardados en el localStorage.");
+  }
+}
+// Función para manejar el clic en el elemento <i>
+function handleItemClick(event) {
+  // Obtener el elemento <i> que se hizo clic
+  var elementoI = event.target;
+  // Alternar la clase "clicked" en el elemento <i>
+  elementoI.classList.toggle("clicked");
+}
 
-//     // Verificar si hay elementos favoritos en el localStorage
-//     if (favItems) {
-//       // Convertir la cadena JSON en un arreglo de objetos
-//       favItems = JSON.parse(favItems);
-
-//       // Encontrar el índice del elemento actual en el arreglo de favoritos
-//       const indexToRemove = favItems.findIndex(item => item.unique === "3-Green"); // Suponiendo que el uniqueId sea "3-Green"
-
-//       // Si se encuentra el elemento en el arreglo de favoritos, removerlo
-//       if (indexToRemove !== -1) {
-//         favItems.splice(indexToRemove, 1); // Remover el elemento del arreglo
-//         localStorage.setItem("fav", JSON.stringify(favItems)); // Actualizar el localStorage
-//         console.log("Elemento eliminado de favoritos.");
-//       }
-//     }
-//   }
-// });
-// localStorage.removeItem("heartState");
+// Obtener todos los elementos <i> y agregar un listener para el clic
+var elementosI = document.querySelectorAll("i");
+elementosI.forEach((elementoI) => {
+  elementoI.addEventListener("click", handleItemClick);
+  console.log(elementoI);
+});
+heartState();

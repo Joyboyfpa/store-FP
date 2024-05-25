@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css..." />
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="./scripts/products.js" sync defer></script>
+    <script src="https://kit.fontawesome.com/1d65fbfa5e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/login.js" sync defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="search">
+            <div class="logo">
+                <a class="logo" href="">
+                    <img src="assets/tiendamia-logo.svg" alt="Logo store">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="login_block">
+                <h1>
+                    Ingresar
+                </h1>
+            </div>
+        </section>
+        <section>
+            <form>
+                <input type="text" id="email" name="email" placeholder="Ejemplo: joyboy@gmail.com"><br>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                    <span class="toggle-password" id="toggle_password">mostrar</span>
+                </div>
+            </form>
+        </section>
+        <div id="contraseña">
+            <p>¿Olvidaste tu contraseña?</p>
+        </div>
+        <section>
+            <button id="ingresar">Ingresar</button>
+        </section>
+        <section>
+            <p id="ofertas_email">*Al ingresar con Facebook o Google estás
+                aceptando a recibir ofertas por email
+            </p>
+        </section>
+        <section>
+            <p id="politicas">Tiendamania está protegida por reCAPTCHA y se aplican las
+                <span>Politicas<br> de Privacidad</span> y los
+                <span>Términos de Servicio de Google.</span>
+            </p>
+        </section>
+        <section>
+            <p>------------------------ ¿No tienes cuenta? ------------------------</p>
+        </section>
+        <section>
+            <a href="./register.html"><button id="registrate">Regístrate</button></a>
+        </section>
+        <section>
+            <p id="terminos">Al registrarte estás aceptando nuestros <span>Términos y Condiciones</span><br> y nuestras
+                <span>Politicas de Privacidad</span></p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

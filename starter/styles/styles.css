@@ -545,10 +545,10 @@ footer .container {
 #div-favorite:hover {
   margin: 33px;
   font-size: 28px;
-}
+}   
 #favorite-heart:active {
   color: red;
 }
-#favorite-heart.clicked {
+#favorite-heart.clicked{
   color: red;
 }
