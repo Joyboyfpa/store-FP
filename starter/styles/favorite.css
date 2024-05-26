@@ -15,24 +15,12 @@ header {
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
-  gap: 870px;
+  gap: 780px;
 }
 .search .logo img {
   width: 218px;
 }
-.search .form {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-.search .form input {
-  height: 62px;
-  border-radius: 14px;
-  border: none;
-  width: 505px;
-  padding: 20px;
-  box-sizing: border-box;
-}
+
 .search .social ul {
   display: flex;
   justify-content: flex-end;
@@ -584,6 +572,9 @@ footer .container {
 }
 /* MOVIL */
 @media (max-width: 425px) {
+  header {
+    height: 140px;
+  }
   .search {
     display: flex;
     justify-content: space-around;
@@ -634,7 +625,7 @@ footer .container {
     font-size: 15px;
     padding-top: 2px;
   }
-  
+
   #carrito-logo {
     color: white;
     font-size: 15px;
@@ -645,7 +636,7 @@ footer .container {
     font-size: 15px;
     padding-top: 2px;
   }
-  
+
   #facebook-logo {
     color: white;
     font-size: 15px;
@@ -755,10 +746,8 @@ footer .container {
     color: gray;
   }
   #div-favorite:hover {
-    align-self: flex-start;
-    margin: 10px 90px 0px 0px;
-    font-size: 19px;
-    color: gray;
+    margin: 33px;
+    font-size: 28px;
   }
   #favorite-heart:active {
     color: red;

@@ -370,6 +370,9 @@ footer .container {
 }
 /* Vista celular*/
 @media (max-width: 425px) {
+  header {
+    height: 100px;
+  }
   .search {
     display: flex;
     justify-content: space-around;
@@ -385,11 +388,11 @@ footer .container {
     justify-content: center;
   }
   .search .form input {
-    height: 40px;
+    height: 30px;
     border-radius: 14px;
     border: none;
-    width: 100px;
-    padding: 20px;
+    width: 130px;
+    padding: 10px;
     box-sizing: border-box;
   }
   .search .social ul {
@@ -400,8 +403,41 @@ footer .container {
     padding: 0;
   }
   .search .social ul li {
-    padding: 0 10px;
+    padding: 0px 5px;
     width: 11px;
+  }
+  #user-checked {
+    color: white;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+  
+  #circle-user {
+    color: white;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+  
+  #carrito-logo {
+    color: white;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+  #heart-logo {
+    color: white;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+  
+  #facebook-logo {
+    color: white;
+    font-size: 15px;
+    padding-top: 0px;
+  }
+  #ig-logo {
+    color: white;
+    font-size: 15px;
+    padding-top: 0px;
   }
   .nav {
     padding: 10px 0;
@@ -419,6 +455,7 @@ footer .container {
     font-weight: 700;
     text-align: left;
     text-decoration: none;
+    font-size: 10px;
   }
   .nav ul li a:hover {
     text-decoration: underline;
@@ -433,6 +470,9 @@ footer .container {
     border-radius: 14px;
     width: auto;
     overflow: hidden;
+  }
+  #hero{
+    height: 200px;
   }
   #hero .container span:first-child {
     color: white;
@@ -463,7 +503,7 @@ footer .container {
     font-size: 14px;
   }
 }
-@media (max-width: 465px) {
+/* @media (max-width: 465px) {
   .search {
     display: flex;
     justify-content: space-around;
@@ -537,89 +577,4 @@ footer .container {
     font-size: 50px;
     line-height: 80px;
   }
-}
-
-/*CARRITO*/
-#cart {
-  display: flex;
-  align-items: center;
-  padding-left: 400px;
-}
-#carrito {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* border: 2px solid  red  ; */
-  background-color: rgb(233, 227, 227);
-  margin: 2em;
-  border-radius: 10px;
-  height: 271px;
-  width: 800px;
-}
-#carrito img {
-  height: 150px;
-  width: 150px;
-  margin: 3em;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 10px;
-}
-#carrito span {
-  padding-left: 5em;
-  padding-right: 5em;
-}
-#carrito-cantidad {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  border-radius: 3px;
-  border: none;
-  height: 30px;
-  width: 50px;
-}
-#cart-description {
-  display: block;
-}
-#resumen {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid  red  ; */
-  background-color: rgb(233, 227, 227);
-  padding: 1.3em;
-  border-radius: 10px;
-  width: 380px;
-}
-#resumen-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15em;
-}
-#resumen-bttn {
-  width: 100%;
-  background: #ff3b3c;
-  color: white;
-  font-weight: bold;
-  border: none;
-  height: 40px;
-  border-radius: 10px;
-}
-#div-favorite {
-  align-self: flex-start;
-  margin: 35px;
-  font-size: 24px;
-  color: gray;
-}
-#div-favorite:hover {
-  margin: 33px;
-  font-size: 28px;
-}
-#favorite-heart:active {
-  color: red;
-}
-#favorite-heart.clicked {
-  color: red;
-}
+} */

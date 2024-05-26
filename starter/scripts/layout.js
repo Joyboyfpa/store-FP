@@ -2,22 +2,22 @@ const navSelector = document.getElementById("nav");
 const options = [
   {
     title: "Ofertas de la semana",
-    linkTo: "./outlet.html",
+    linkTo: "./index.html",
     opts: ["Ofertas de la semana", "Laptops", "Audio", "Auticulares"],
   },
   {
     title: "Celulares",
-    linkTo: "./celulares.html",
+    linkTo: "./index.html",
     opts: ["Cómo comprar", "Formas de pago", "Envios", "Devoluciones"],
   },
   {
     title: "Laptops",
-    linkTo: "./laptops.html",
+    linkTo: "./index.html",
     opts: ["Costos y tarifas", "Impuestos", "Facturación"],
   },
   {
     title: "Soporte",
-    linkTo: "./warranty.html",
+    linkTo: "./index.html",
     opts: ["Mis pedidos", "Pedir nuevamente", "Lista de deseos"],
   },
 ];
