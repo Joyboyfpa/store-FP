@@ -95,6 +95,8 @@ section {
 #politicas {
   font-size: 11.5px;
   color: gray;
+  width: 500px;
+  padding-left: 100px;
 }
 #politicas span {
   color: blue;
@@ -102,9 +104,23 @@ section {
 #terminos {
   font-size: 11.5px;
   color: gray;
+  width: 500px;
+  padding-left: 100px;
 }
 #terminos span {
   color: blue;
+}
+.contenedor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Espaciado opcional */
+}
+
+.linea {
+  width: 125px; /* Ancho específico para hacer la línea más corta */
+  height: 1px; /* Hacer la línea más delgada */
+  background-color: black;
+  margin: 0 10px; /* Añadir espacio a los lados de las líneas */
 }
 .password-container {
   position: relative;
@@ -138,3 +154,126 @@ input[type="checkbox"] {
   top: -2px; /* Ajusta este valor para mover el label más arriba o abajo */
 }
 /* MAIN */
+/* MOVIL 425 */
+@media (max-width: 465px) {
+  /* MAIN */
+  main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login_block {
+    margin-top: 20px;
+  }
+
+  #email {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 10px;
+  }
+  #password {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 10px;
+  }
+  #contraseña{
+    padding-left: 60px;
+    width: 280px;
+  }
+  #contraseña p {
+    font-size: 12px;
+  }
+  #contraseña p span {
+    color: rgb(0, 128, 255);
+    font-size: 12px;
+    
+  }
+  #ingresar {
+    width: 311px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+  }
+  #registrate {
+    width: 311px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: rgba(245, 245, 245, 0.872);
+    color: black;
+    font-size: 15px;
+  }
+  #ofertas_email {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 50px 0px 60px;
+  }
+  #politicas {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 50px 0px 60px;
+  }
+  #politicas span {
+    color: blue;
+  }
+  .contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Espaciado opcional */
+  }
+
+  .linea {
+    width: 78px; /* Ancho específico para hacer la línea más corta */
+    height: 1px; /* Hacer la línea más delgada */
+    background-color: black;
+    margin: 0 10px; /* Añadir espacio a los lados de las líneas */
+  }
+  #no_cuenta{
+    font-size: 15px;
+  }
+  #terminos {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 40px 0px 60px;
+  }
+  #terminos span {
+    color: blue;
+  }
+  .password-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .password-container input {
+    padding-right: 2px; /* espacio para el botón de mostrar/ocultar */
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-40%);
+    cursor: pointer;
+    user-select: none;
+    color: gray;
+    font-size: 13px;
+  }
+  /* MAIN */
+}
+/* MOVIL 425 */

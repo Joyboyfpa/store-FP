@@ -161,43 +161,43 @@ function printDetails(id) {
 </div>
 <div class="sales-block">
   <h2>Ofertas Destacadas</h2>
-  <article class="product-card">
-      <a class="product-card" href="./details.html">
-          <img class="product-img" src="assets\mock1.jpg" alt="Macbook Pro" />
+  <article id="product-card" class="product-card">
+      <a class="product-card" href="./details.html?id=1">
+          <img class="product-img" src="./assets/mock1.jpg" alt="Macbook Pro" />
           <div class="product-info">
               <span class="product-title">Macbook Pro 15'4</span>
-              <span class="product-description">Space Gray</span>
+              <span class="product-description">El MacBook Pro de 15,4 pulgadas tiene una pantalla Retina retroiluminada por LED con tecnología IPS y una resolución nativa de 2880 por 1800 a 220 píxeles por pulgada. El MacBook Pro de 15,4 pulgadas también puede tener una Touch Bar con sensor Touch ID integrado.</span>
               <div class="product-price-block">
-                  <span class="price">$750.000</span>
+                  <span class="price">$750</span>
                   <span class="discount">50% Off</span>
               </div>
               <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
           </div>
       </a>
   </article>
-  <article class="product-card">
-      <a class="product-card" href="./details.html">
-          <img class="product-img" src="assets\mock1.jpg" alt="Macbook Pro" />
+  <article id="product-card" class="product-card">
+      <a class="product-card" href="./details.html?id=2">
+          <img class="product-img" src="./assets/mock2.jpg" alt="Macbook Pro" />
           <div class="product-info">
-              <span class="product-title">Macbook Pro 15'4</span>
-              <span class="product-description">Space Gray</span>
+              <span class="product-title">Laptop Asus 32'</span>
+              <span class="product-description">11 Pro para empresa: Procesador Intel® Core™ i9-13980HX, NVIDIA RTX™ GPU para portátiles de generación Ada 3000, pantalla OLED de 16' 16:10 de 3,2 K y 120 Hz, memoria de dos ranuras SODIMM de hasta 32 GB, hasta 1 TB, dos ranuras M.2 PCIe® SSD, ASUS Dial y Thunderbolt™ 4 USB-C®</span>
               <div class="product-price-block">
-                  <span class="price">$750.000</span>
-                  <span class="discount">50% Off</span>
+                  <span class="price">$1000</span>
+                  <span class="discount">20% Off</span>
               </div>
               <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
           </div>
       </a>
   </article>
-  <article class="product-card">
-      <a class="product-card" href="./details.html">
-          <img class="product-img" src="assets\mock1.jpg" alt="Macbook Pro" />
+  <article id="product-card" class="product-card">
+      <a class="product-card" href="./details.html?id=5">
+          <img class="product-img" src="./assets/mock5.jpg" alt="Macbook Pro" />
           <div class="product-info">
               <span class="product-title">Macbook Pro 15'4</span>
-              <span class="product-description">Space Gray</span>
+              <span class="product-description">El Samsung Galaxy S23 Plus posee un procesador Qualcomm (SM8550) con una velocidad Octa Core 3.36GHz,2.8GHz,2GHz. ¿Cuántas cámaras tiene el Samsung Galaxy S23 Plus? El Samsung Galaxy S23 Plus cuenta con una cámara frontal de 12MP además de tres cámaras posteriores de 50MP, 10MP y 12MP.</span>
               <div class="product-price-block">
-                  <span class="price">$750.000</span>
-                  <span class="discount">50% Off</span>
+                  <span class="price">$1500</span>
+                  <span class="discount">10% Off</span>
               </div>
               <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
           </div>

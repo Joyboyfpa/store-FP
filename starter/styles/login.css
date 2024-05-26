@@ -77,34 +77,161 @@ input {
   color: black;
   font-size: 20px;
 }
-#ofertas_email{
-    font-size: 11.5px;
-    color: gray;
+#ofertas_email {
+  font-size: 11.5px;
+  color: gray;
 }
-#politicas{
-    font-size: 11.5px;
-    color: gray;
+#politicas {
+  font-size: 11.5px;
+  color: gray;
+  width: 400px;
 }
-#politicas span{
-    color: blue;
+#politicas span {
+  color: blue;
 }
-#terminos{
-    font-size: 11.5px;
-    color: gray;
+.contenedor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Espaciado opcional */
 }
-#terminos span{
-    color: blue;
+
+.linea {
+  width: 125px; /* Ancho específico para hacer la línea más corta */
+  height: 1px; /* Hacer la línea más delgada */
+  background-color: black;
+  margin: 0 10px; /* Añadir espacio a los lados de las líneas */
+}
+
+#terminos {
+  font-size: 11.5px;
+  color: gray;
+  width: 400px;
+}
+#terminos span {
+  color: blue;
 }
 .password-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .password-container input {
-    padding-right: 2px; /* espacio para el botón de mostrar/ocultar */
+  padding-right: 2px; /* espacio para el botón de mostrar/ocultar */
 }
 
 .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 55%;
+  transform: translateY(-40%);
+  cursor: pointer;
+  user-select: none;
+  color: gray;
+  font-size: 13px;
+}
+/* MAIN */
+
+/* MOVIL 425 */
+@media (max-width: 465px) {
+  /* MAIN */
+  main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #login_block {
+    margin-top: 20px;
+  }
+
+  input {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 10px;
+  }
+  #contraseña {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+  }
+  #contraseña p {
+    color: rgb(0, 128, 255);
+    font-size: 14px;
+  }
+  #ingresar {
+    width: 311px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+  }
+  #registrate {
+    width: 311px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: rgba(245, 245, 245, 0.872);
+    color: black;
+    font-size: 15px;
+  }
+  #ofertas_email {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 50px 0px 60px;
+  }
+  #politicas {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 50px 0px 60px;
+  }
+  #politicas span {
+    color: blue;
+  }
+  .contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Espaciado opcional */
+  }
+
+  .linea {
+    width: 78px; /* Ancho específico para hacer la línea más corta */
+    height: 1px; /* Hacer la línea más delgada */
+    background-color: black;
+    margin: 0 10px; /* Añadir espacio a los lados de las líneas */
+  }
+  #no_cuenta{
+    font-size: 15px;
+  }
+  #terminos {
+    font-size: 11.5px;
+    color: gray;
+    padding: 0px 40px 0px 60px;
+  }
+  #terminos span {
+    color: blue;
+  }
+  .password-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .password-container input {
+    padding-right: 2px; /* espacio para el botón de mostrar/ocultar */
+  }
+
+  .toggle-password {
     position: absolute;
     right: 15px;
     top: 55%;
@@ -113,5 +240,7 @@ input {
     user-select: none;
     color: gray;
     font-size: 13px;
+  }
+  /* MAIN */
 }
-/* MAIN */
+/* MOVIL 425 */
