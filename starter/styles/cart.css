@@ -599,6 +599,31 @@ footer .container {
   #nav ul li{
     font-size: 10px
   }
+  #hero {
+    background: url("../assets/hero_bg.png");
+    background-size: cover;
+    background-position: top center;
+    height: 150px;
+  }
+  #hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #hero .container span {
+    display: block;
+    font-weight: 700;
+    padding-left: 30px;
+  }
+  #hero .container span:first-child {
+    color: white;
+    font-size: 20px;
+  }
+  #hero .container span:last-child {
+    color: rgb(86, 210, 241);
+    font-size: 50px;
+    line-height: 80px;
+  }
   #user-checked {
     color: white;
     font-size: 15px;
@@ -632,7 +657,8 @@ footer .container {
     padding-top: 0px;
   }
   #cart {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-left: 0px;
   }
@@ -649,14 +675,16 @@ footer .container {
   }
   #carrito span {
     font-size: 13px;
+    width: 10px;
   }
   #carrito {
+    order: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* border: 2px solid  red  ; */
     background-color: rgb(233, 227, 227);
-    margin: 1em;
+    margin: 10px;
     border-radius: 10px;
     height: 200px;
     width: 400px;
@@ -681,11 +709,13 @@ footer .container {
     background-color: white;
     border-radius: 3px;
     border: none;
-    height: 30px;
-    width: 50px;
+    height: 20px;
+    width: 30px;
+    font-size: 10px;
   }
 
   #resumen {
+    order: 1;
     display: block;
     justify-content: center;
     align-items: center;
@@ -693,8 +723,9 @@ footer .container {
     background-color: rgb(233, 227, 227);
     padding: 1.3em;
     border-radius: 10px;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 358px;
+    margin: 10px;
   }
   #resumen h2 {
     font-size: 15px;
@@ -706,7 +737,7 @@ footer .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 15em;
+    gap: 2em;
   }
   #resumen-bttn {
     width: 100%;
@@ -719,8 +750,8 @@ footer .container {
   }
   #div-favorite {
     align-self: flex-start;
-    margin: 35px;
-    font-size: 24px;
+    margin: 10px 90px 0px 0px;
+    font-size: 19px;
     color: gray;
   }
   #div-favorite:hover {
